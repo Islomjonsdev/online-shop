@@ -1,3 +1,5 @@
+@import "../../../scss/variable.scss";
+
 .header {
   .header_blog {
     background: #f4f5f5;
@@ -24,7 +26,7 @@
         display: flex;
         align-items: center;
         gap: 4px;
-        color: #727474;
+        color: $grey;
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
@@ -47,11 +49,56 @@
         display: flex;
         align-items: center;
         gap: 6px;
-        color: #727474;
+        color: $grey;
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
         line-height: 20px; /* 142.857% */
+      }
+
+      .header_lang {
+        width: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        .header_lang_wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 3px;
+          padding: 10px;
+          cursor: pointer;
+
+          .svg_icon {
+            width: 15px;
+            height: 15px;
+            color: $grey;
+          }
+          p {
+            color: $grey;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+          }
+        }
+
+        .header_drop_down {
+          position: absolute;
+          top: 110%;
+          left: 0;
+          background-color: $white;
+          border-radius: 10px;
+          box-shadow: 3px 3px 6px 10px rgba(0, 0, 0, 0.06);
+          width: 100%;
+
+          .header_drop_down_item {
+            padding: 10px;
+            cursor: pointer;
+          }
+        }
       }
     }
   }

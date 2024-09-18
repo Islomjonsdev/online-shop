@@ -1,10 +1,13 @@
 import React from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Icons } from "../../../SvgIcons";
+import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
 import style from "./Header.module.scss";
 import HeaderBottom from "./HeaderBottom/HeaderBottom";
 
 const Header = () => {
+  const [isActive, setIsActive] = useState(false);
   return (
     <header className={style.header}>
       <div className={style.header_blog}>
@@ -27,9 +30,19 @@ const Header = () => {
                 home24.uz
               </Link>
               <Link to={"tel:+998 71 200 7 002"}>+998 71 200 7 002</Link>
-              <select name="" id="">
-                <option value="uz">uz</option>
-              </select>
+              <div className={style.header_lang}>
+                <div className={style.header_lang_wrapper} onClick={(e) => setIsActive(!isActive)}>
+                  <p>Uz</p>
+                  {isActive === false ? <IoIosArrowDown className={style.svg_icon}/> : <IoIosArrowUp className={style.svg_icon}/>}
+                </div>
+                {isActive && (
+                  <div className={style.header_drop_down}>
+                    <div className={style.header_drop_down_item}>Uz</div>
+                    <div className={style.header_drop_down_item}>Ru</div>
+                    <div className={style.header_drop_down_item}>En</div>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </div>
