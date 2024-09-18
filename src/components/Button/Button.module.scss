@@ -1,0 +1,27 @@
+@import "../../scss/variable.scss";
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: $orange;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 10px 18px;
+  background: #fde7bd;
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    span {
+      border: 1px solid $orange;
+      height: 2px;
+      width: 16px;
+    }
+  }
+}

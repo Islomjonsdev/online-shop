@@ -78,4 +78,172 @@ export const Icons = {
       />
     </svg>
   ),
+
+  search: (props) => (
+    <svg
+      width="21"
+      height="21"
+      viewBox="0 0 21 21"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <circle
+        cx="9.76663"
+        cy="9.76663"
+        r="8.98856"
+        stroke="#020105"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M16.0183 16.4852L19.5423 20.0001"
+        stroke="#020105"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  ),
+
+  compare: (props) => (
+    <svg
+      width="18"
+      height="20"
+      viewBox="0 0 18 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M17.1642 5.16039L3.54639 5.16039"
+        stroke="#200E32"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M13.0681 1.08273L17.1648 5.1605L13.0681 9.23828"
+        stroke="#200E32"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M0.832764 15.0889L14.4505 15.0889"
+        stroke="#200E32"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M4.92894 19.1665L0.832275 15.0887L4.92894 11.0109"
+        stroke="#200E32"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  ),
+
+  heart: (props) => (
+    <svg
+      width="22"
+      height="20"
+      viewBox="0 0 22 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M10.761 18.8538C8.5904 17.5179 6.57111 15.9456 4.73929 14.1652C3.45144 12.8829 2.47101 11.3198 1.8731 9.59539C0.797144 6.25031 2.05393 2.42083 5.57112 1.28752C7.41961 0.692435 9.43845 1.03255 10.9961 2.20148C12.5543 1.03398 14.5725 0.693978 16.4211 1.28752C19.9383 2.42083 21.2041 6.25031 20.1281 9.59539C19.5302 11.3198 18.5498 12.8829 17.2619 14.1652C15.4301 15.9456 13.4108 17.5179 11.2402 18.8538L11.0051 19L10.761 18.8538Z"
+        stroke="#020105"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M14.7393 5.05298C15.8046 5.39328 16.5615 6.34968 16.6561 7.47496"
+        stroke="#020105"
+        strokeWidth="1.5"
+        strokLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  ),
+
+  cart: (props) => (
+    <svg
+      width="21"
+      height="22"
+      viewBox="0 0 21 22"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M14.5137 20.4999H6.16592C3.09955 20.4999 0.747152 19.3924 1.41534 14.9347L2.19338 8.89351C2.60528 6.66925 4.02404 5.81799 5.26889 5.81799H15.4474C16.7105 5.81799 18.0469 6.73332 18.5229 8.89351L19.3009 14.9347C19.8684 18.8889 17.5801 20.4999 14.5137 20.4999Z"
+        stroke="#020105"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M14.651 5.59836C14.651 3.21229 12.7167 1.27799 10.3306 1.27799V1.27799C9.18162 1.27312 8.078 1.72615 7.26381 2.53691C6.44963 3.34766 5.99193 4.44935 5.99194 5.59836H5.99194"
+        stroke="#020105"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M13.2963 10.1018H13.2506"
+        stroke="#020105"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M7.46566 10.1018H7.41989"
+        stroke="#020105"
+        strokWidth="1.5"
+        strokeWinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  ),
+
+  profile: (props) => (
+    <svg
+      width="17"
+      height="22"
+      viewBox="0 0 17 22"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <circle
+        cx="8.57894"
+        cy="6.27803"
+        r="4.77803"
+        stroke="#020105"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M1.00002 17.7014C0.998732 17.3655 1.07385 17.0338 1.2197 16.7312C1.67736 15.8158 2.96798 15.3307 4.03892 15.111C4.81128 14.9462 5.59431 14.8361 6.38217 14.7815C7.84084 14.6534 9.30793 14.6534 10.7666 14.7815C11.5544 14.8367 12.3374 14.9468 13.1099 15.111C14.1808 15.3307 15.4714 15.7701 15.9291 16.7312C16.2224 17.348 16.2224 18.064 15.9291 18.6808C15.4714 19.6419 14.1808 20.0813 13.1099 20.2918C12.3384 20.4635 11.5551 20.5767 10.7666 20.6305C9.57937 20.7311 8.38659 20.7495 7.19681 20.6854C6.92221 20.6854 6.65677 20.6854 6.38217 20.6305C5.59663 20.5773 4.81632 20.4641 4.04807 20.2918C2.96798 20.0813 1.68652 19.6419 1.2197 18.6808C1.0746 18.3747 0.999552 18.0402 1.00002 17.7014Z"
+        stroke="#020105"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  ),
 };
