@@ -31,9 +31,16 @@ const Header = () => {
               </Link>
               <Link to={"tel:+998 71 200 7 002"}>+998 71 200 7 002</Link>
               <div className={style.header_lang}>
-                <div className={style.header_lang_wrapper} onClick={(e) => setIsActive(!isActive)}>
+                <div
+                  className={style.header_lang_wrapper}
+                  onClick={(e) => setIsActive(!isActive)}
+                >
                   <p>Uz</p>
-                  {isActive === false ? <IoIosArrowDown className={style.svg_icon}/> : <IoIosArrowUp className={style.svg_icon}/>}
+                  {isActive === false ? (
+                    <IoIosArrowDown className={style.svg_icon} />
+                  ) : (
+                    <IoIosArrowUp className={style.svg_icon} />
+                  )}
                 </div>
                 {isActive && (
                   <div className={style.header_drop_down}>
