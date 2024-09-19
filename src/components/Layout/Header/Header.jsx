@@ -12,7 +12,6 @@ const Header = () => {
   const { t } = useTranslation();
   const [isActive, setIsActive] = useState(false);
   const [changeLang, setChangeLang] = useState("uz");
-  console.log(changeLang);
   const handleChangeLanguage = (lang) => {
     i18n.changeLanguage(lang); // Change the language
     setChangeLang(lang); // Update the local state

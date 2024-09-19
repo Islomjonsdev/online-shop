@@ -1,5 +1,7 @@
+@import "../../scss/variable.scss";
+
 .hero {
-    background: #F5F5F5;
+    background: #f5f5f5;
     padding: 45px 0px 95px 0px;
     
     .container {
@@ -12,9 +14,115 @@
     }
     
     .hero_container {
-        max-width: 1218px;
-        width: 100%;
-        border-radius: var(--Corner-Rad-4, 24px);
-        background: #FF7E00;
+        justify-content: space-between;
+        display: flex;
+        
+        .hero_blog {
+            position: relative;
+            max-width: 1218px;
+            width: 100%;
+            border-radius: 24px;
+            background: #ff7e00;
+            padding: 80px 0px 80px 96px;
+            
+            .hero_left {
+                max-width: 468px;
+                width: 100%;
+                
+                h3 {
+                    color: $white;
+                    font-size: 64px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 72px;
+                    margin-bottom: 40px;
+                }
+                
+                p {
+                    color: $white;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 32px;
+                    margin-bottom: 8px;
+                }
+                
+                span {
+                    color: $white;
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 48px;
+                }
+            }
+        }
+        
+        .hero_right {
+            max-width: 390px;
+            width: 100%;
+            border-radius: 24px;
+            background: $white;
+            padding: 30px 32px 91px 32px ;
+            
+            .hero_right_top {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 34px;
+                h3 {
+                    text-transform: uppercase;
+                    color: $black;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+                
+                button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: none;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    fill: #F4F5F5;
+                    cursor: pointer;
+
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+        
+        .hero_btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            fill: var(--Main-colours-white, #fff);
+            opacity: 0.48;
+            svg {
+                width: 24px;
+                height: 24px;
+            }
+        }
+        
+        .hero_btn[data-btn-type="left"] {
+            left: 16px;
+        }
+        
+        .hero_btn[data-btn-type="right"] {
+            right: 16px;
+        }
     }
 }
