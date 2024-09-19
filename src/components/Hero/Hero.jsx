@@ -8,7 +8,7 @@ import style from "./Hero.module.scss";
 import { useTranslation } from "react-i18next";
 
 const Hero = () => {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
   const [like, setLike] = useState(false);
   const handleLike = () => {
     setLike((prev) => !prev);
@@ -47,7 +47,10 @@ const Hero = () => {
                   <span>-90%</span>
                 </div>
                 <p className={style.text2}>{t("noReviews")}</p>
-                <span>Realme Pad Mini 32GB + 3GB LTE <span className={style.xs}>({t("blue")})</span></span>
+                <span>
+                  Realme Pad Mini 32GB + 3GB LTE{" "}
+                  <span className={style.xs}>({t("blue")})</span>
+                </span>
               </div>
             </div>
           </div>
