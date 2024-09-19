@@ -5,9 +5,19 @@ import { Icons } from "../../../SvgIcons";
 import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
 import style from "./Header.module.scss";
 import HeaderBottom from "./HeaderBottom/HeaderBottom";
+import { useTranslation } from "react-i18next";
+import i18n from "../../../locales/i18next";
 
 const Header = () => {
+  const { t } = useTranslation();
   const [isActive, setIsActive] = useState(false);
+  const [changeLang, setChangeLang] = useState("uz");
+  console.log(changeLang);
+  const handleChangeLanguage = (lang) => {
+    i18n.changeLanguage(lang); // Change the language
+    setChangeLang(lang); // Update the local state
+    setIsActive(false); // Close the dropdown
+  };
   return (
     <header className={style.header}>
       <div className={style.header_blog}>
@@ -16,7 +26,7 @@ const Header = () => {
             <div className={style.header_left}>
               <Link to={"/"}>
                 <Icons.location />
-                Город: <span>Ташкент</span>
+                {t("city")}: <span>{t("tashkent")}</span>
               </Link>
             </div>
 
@@ -44,9 +54,24 @@ const Header = () => {
                 </div>
                 {isActive && (
                   <div className={style.header_drop_down}>
-                    <div className={style.header_drop_down_item}>Uz</div>
-                    <div className={style.header_drop_down_item}>Ru</div>
-                    <div className={style.header_drop_down_item}>En</div>
+                    <div
+                      className={style.header_drop_down_item}
+                      onClick={() => handleChangeLanguage("uz")}
+                    >
+                      Uz
+                    </div>
+                    <div
+                      className={style.header_drop_down_item}
+                      onClick={() => handleChangeLanguage("ru")}
+                    >
+                      Ru
+                    </div>
+                    <div
+                      className={style.header_drop_down_item}
+                      onClick={() => handleChangeLanguage("en")}
+                    >
+                      En
+                    </div>
                   </div>
                 )}
               </div>

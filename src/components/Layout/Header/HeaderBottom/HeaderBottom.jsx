@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import headerLogo from "../../../../assets/svg/headerLogo.svg";
 import { Icons } from "../../../../SvgIcons";
@@ -8,6 +9,7 @@ import HeaderBottomList from "./HeaderBottomList/HeaderBottomList";
 import HeaderCategory from "./HeaderCategory/HeaderCategory";
 
 const HeaderBottom = () => {
+  const { t } = useTranslation()
   return (
     <div className={style.header_bottom}>
       <div className={style.header_bottom_blog}>
@@ -18,9 +20,9 @@ const HeaderBottom = () => {
             </Link>
 
             <div className={style.header_bottom_list}>
-              <Button title={"Каталог"} />
+              <Button title={t("catalog")} />
               <form>
-                <input type="text" placeholder="Искать"/>
+                <input type="text" placeholder={t("search")}/>
                 <button>
                   <Icons.search />
                 </button>
