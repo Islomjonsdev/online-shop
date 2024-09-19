@@ -1,0 +1,7 @@
+const productsData = [
+    {
+
+    }
+]
+
+export { productsData }
