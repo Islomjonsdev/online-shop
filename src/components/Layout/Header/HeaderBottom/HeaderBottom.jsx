@@ -9,7 +9,7 @@ import HeaderBottomList from "./HeaderBottomList/HeaderBottomList";
 import HeaderCategory from "./HeaderCategory/HeaderCategory";
 
 const HeaderBottom = () => {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
   return (
     <div className={style.header_bottom}>
       <div className={style.header_bottom_blog}>
@@ -22,11 +22,12 @@ const HeaderBottom = () => {
             <div className={style.header_bottom_list}>
               <Button title={t("catalog")} />
               <form>
-                <input type="text" placeholder={t("search")}/>
+                <input type="text" placeholder={t("search")} />
                 <button>
                   <Icons.search />
                 </button>
               </form>
+              
             </div>
 
             <HeaderBottomList />
