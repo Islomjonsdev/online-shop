@@ -11,7 +11,7 @@ import i18n from "../../../locales/i18next";
 const Header = () => {
   const { t } = useTranslation();
   const [isActive, setIsActive] = useState(false);
-  const [changeLang, setChangeLang] = useState("uz");
+  const [changeLang, setChangeLang] = useState(i18n.language || "uz");
   const handleChangeLanguage = (lang) => {
     i18n.changeLanguage(lang); // Change the language
     setChangeLang(lang); // Update the local state
@@ -44,7 +44,7 @@ const Header = () => {
                   className={style.header_lang_wrapper}
                   onClick={(e) => setIsActive(!isActive)}
                 >
-                  <p>Uz</p>
+                  <p>{changeLang.toUpperCase()}</p>
                   {isActive === false ? (
                     <IoIosArrowDown className={style.svg_icon} />
                   ) : (
