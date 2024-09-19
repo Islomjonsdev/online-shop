@@ -3,10 +3,12 @@ import { useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 import { FcLike } from "react-icons/fc";
 import { Icons } from "../../SvgIcons";
-import chairImg from "../../assets/images/chair.png"
+import chairImg from "../../assets/images/chair.png";
 import style from "./Hero.module.scss";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+  const { t } = useTranslation()
   const [like, setLike] = useState(false);
   const handleLike = () => {
     setLike((prev) => !prev);
@@ -20,9 +22,9 @@ const Hero = () => {
               <FaArrowLeft />
             </button>
             <div className={style.hero_left}>
-              <h3>Самый мягкий диваны</h3>
-              <p>Сейфы и металлические шкафы</p>
-              <span>ПРОМЕТ</span>
+              <h3>{t("bestBad")}</h3>
+              <p>{t("metal")}</p>
+              <span>{t("promet")}</span>
             </div>
             <button className={style.hero_btn} data-btn-type="right">
               <FaArrowRight />
@@ -31,7 +33,7 @@ const Hero = () => {
 
           <div className={style.hero_right}>
             <div className={style.hero_right_top}>
-              <h3>товар дня</h3>
+              <h3>{t("productDay")}</h3>
               <button onClick={handleLike}>
                 {like === false ? <Icons.likeIcon /> : <FcLike />}
               </button>
@@ -40,12 +42,12 @@ const Hero = () => {
               <img src={chairImg} alt="" />
 
               <div className={style.hero_right_bottom_list}>
-                  <div>
-                    <p className={style.text1}>Cкидка</p>
-                    <span>-90%</span>
-                  </div>
-                  <p className={style.text2}>Нет отзывов</p>
-                  <span>Realme Pad Mini 32GB + 3GB LTE (синий)</span>
+                <div>
+                  <p className={style.text1}>Cкидка</p>
+                  <span>-90%</span>
+                </div>
+                <p className={style.text2}>Нет отзывов</p>
+                <span>Realme Pad Mini 32GB + 3GB LTE (синий)</span>
               </div>
             </div>
           </div>
