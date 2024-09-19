@@ -13,6 +13,7 @@ import img11 from "../../assets/images/image11.png";
 
 
 import style from "./Category.module.scss";
+import { Link } from "react-router-dom";
 
 const Category = () => {
   const categoryData = [
@@ -89,11 +90,11 @@ const Category = () => {
         <div className={style.category_top}>
           <h4>Ommabop kategoriyalar</h4>
         </div>
-        <ul>
-          {categoryData?.map((category, index) => {
+        <div className={style.category_list}>
+          {categoryData?.map((category) => {
             const { id, image, number, title } = category;
             return (
-              <li key={id}>
+              <Link to={`/category/${id}`} key={id}>
                 <div className={style.category_img}>
                   <img src={image} alt="image" />
                 </div>
@@ -101,10 +102,10 @@ const Category = () => {
                   <span>{number}</span>
                   <p>{title}</p>
                 </div>
-              </li>
+              </Link>
             );
           })}
-        </ul>
+        </div>
       </div>
     </section>
   );
