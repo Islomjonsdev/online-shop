@@ -27,5 +27,16 @@
             font-weight: 400;
             line-height: 26px; /* 144.444% */
         }
+        
+        select {
+            border: none;
+            cursor: pointer;
+            outline: none;
+            color: $orange;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px; /* 144.444% */
+        }
     }
 }

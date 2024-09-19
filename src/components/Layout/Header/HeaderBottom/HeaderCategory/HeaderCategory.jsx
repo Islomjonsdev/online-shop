@@ -51,6 +51,8 @@ const HeaderCategory = () => {
       categoryText: "Акции",
     },
   ];
+
+  const selects = ["Ещё", "Ещё", "Ещё", "Ещё", "Ещё", "Ещё", "Ещё"]
   return (
     <div className={style.header_category}>
       <div className={style.container}>
@@ -63,8 +65,10 @@ const HeaderCategory = () => {
               </Link>
             );
           })}
-          <select name="" id="">
-            <option value="">Ещё</option>
+          <select>
+              {
+                selects?.map((option, index) => (<option key={index}>{option}</option>))
+              }
           </select>
         </div>
       </div>

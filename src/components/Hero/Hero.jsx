@@ -43,11 +43,11 @@ const Hero = () => {
 
               <div className={style.hero_right_bottom_list}>
                 <div>
-                  <p className={style.text1}>Cкидка</p>
+                  <p className={style.text1}>{t("discount")}</p>
                   <span>-90%</span>
                 </div>
-                <p className={style.text2}>Нет отзывов</p>
-                <span>Realme Pad Mini 32GB + 3GB LTE (синий)</span>
+                <p className={style.text2}>{t("noReviews")}</p>
+                <span>Realme Pad Mini 32GB + 3GB LTE <span className={style.xs}>({t("blue")})</span></span>
               </div>
             </div>
           </div>
