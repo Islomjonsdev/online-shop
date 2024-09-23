@@ -10,6 +10,7 @@ import { useTranslation } from "react-i18next";
 const Hero = () => {
   const { t } = useTranslation();
   const [like, setLike] = useState(false);
+  const [as, setAs] = useState([])
   const handleLike = () => {
     setLike((prev) => !prev);
   };
