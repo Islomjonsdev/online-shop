@@ -50,7 +50,7 @@ const Products = () => {
                     {!likedCards?.includes(id) ? (
                       <Icons.likeIcon />
                     ) : (
-                      <FcLike />
+                      <Icons.hearIcons />
                     )}
                   </button>
                   <button className={style.exchange}>
