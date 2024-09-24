@@ -1,12 +1,9 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
-import { FcLike } from "react-icons/fc";
 import { productsData } from "../../Api/ProductsApi";
 import { Icons } from "../../SvgIcons";
 import style from "./Products.module.scss";
-import { useEffect } from "react";
 
 const Products = () => {
   const { t } = useTranslation();
