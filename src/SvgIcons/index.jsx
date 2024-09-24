@@ -486,12 +486,12 @@ export const Icons = {
 
   likeIcon: (props) => (
     <svg
-    width="16"
-    height="14"
-    viewBox="0 0 16 14"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    {...props}
+      width="16"
+      height="14"
+      viewBox="0 0 16 14"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
     >
       <path
         fillRule="evenodd"
@@ -506,6 +506,82 @@ export const Icons = {
         d="M10.4928 3.70203C11.203 3.92889 11.7076 4.56649 11.7707 5.31668"
         stroke="#200E32"
         strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  ),
+
+  cartIcon: (props) => (
+    <svg
+      width="14"
+      height="14"
+      viewBox="0 0 14 14"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M10.0517 12.2135C9.77037 12.2135 9.5417 12.4422 9.5417 12.7235C9.5417 13.0049 9.77037 13.2329 10.0517 13.2329C10.333 13.2329 10.561 13.0049 10.561 12.7235C10.561 12.4422 10.333 12.2135 10.0517 12.2135Z"
+        stroke="white"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M2.5503 12.2135C2.26897 12.2135 2.0403 12.4422 2.0403 12.7235C2.0403 13.0049 2.26897 13.2329 2.5503 13.2329C2.83164 13.2329 3.0603 13.0049 3.0603 12.7235C3.0603 12.4422 2.83164 12.2135 2.5503 12.2135Z"
+        stroke="white"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M13.1667 1.16667L11.7801 1.40667L11.1381 9.05533C11.0861 9.67867 10.5654 10.1573 9.94008 10.1573H2.66541C2.06808 10.1573 1.56141 9.71867 1.47541 9.12667L0.842748 4.75467C0.764748 4.21533 1.18275 3.73267 1.72741 3.73267H11.5574"
+        stroke="white"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M5.58301 6.19667H3.73434"
+        stroke="white"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  ),
+
+  exchange: (props) => (
+    <svg
+      width="12"
+      height="14"
+      viewBox="0 0 12 14"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M11.4428 10.2264H2.36426"
+        stroke="#FF6418"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M8.71216 12.9448L11.4433 10.2263L8.71216 7.50778"
+        stroke="#FF6418"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M0.55542 3.60743L9.63394 3.60743"
+        stroke="#FF6418"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M3.28604 0.888977L0.554932 3.6075L3.28604 6.32601"
+        stroke="#FF6418"
         strokeLinecap="round"
         strokeLinejoin="round"
       />

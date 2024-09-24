@@ -1,36 +1,170 @@
 @import "../../scss/variable.scss";
 
 .products {
-    .container {
-        max-width: 1672px;
-        width: 100%;
-        margin-right: auto;
-        margin-left: auto;
-        padding-left: 20px;
-        padding-right: 20px;
+  .container {
+    max-width: 1672px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .profucts_top {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 24px;
+
+    h3 {
+      color: $black;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 48px; /* 150% */
     }
-    
-    .profucts_top {
+
+    span {
+      color: $orange;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px; /* 140% */
+      text-decoration-line: underline;
+    }
+  }
+
+  .products_list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    li {
+      max-width: 252px;
+      width: 100%;
+      position: relative;
+      &:hover {
+        .products_btn {
+          position: absolute;
+          top: 12px;
+          right: 12px;
+          display: flex;
+          flex-direction: column;
+
+          button {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 14px;
+            cursor: pointer;
+          }
+
+          .exchange {
+            display: none;
+          }
+        }
+      }
+
+      .card_image {
+        margin-bottom: 8px;
+        position: relative;
+      }
+
+      .products_btn {
+        position: absolute;
+        top: 12px;
+        right: 12px;
         display: flex;
-        align-items: center;
-        gap: 24px;
-        margin-bottom: 24px;
-        
-        h3 {
-            color: $black;
-            font-size: 32px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 48px; /* 150% */
+        flex-direction: column;
+
+        button {
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          border: none;
+          display: none;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 14px;
+          cursor: pointer;
         }
-        
-        span {
-            color: $orange;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 28px; /* 140% */
-            text-decoration-line: underline;
+
+        .exchange {
+          display: none;
         }
+      }
+
+      .products_list_item {
+        background: #f9f9f9;
+        padding: 12px 16px;
+        border-radius: 16px;
+
+        .products_list_top {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 7.5px;
+
+          .products_list_top_item {
+            span {
+              display: block;
+              color: #020105;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 24px; /* 150% */
+            }
+
+            del {
+              color: #9a999b;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 20px; /* 142.857% */
+            }
+          }
+
+          button {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            background: $orange;
+          }
+        }
+
+        .products_star_wrapper {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+          margin-bottom: 7.5px;
+          p {
+            color: #020105;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 12px; /* 92.308% */
+          }
+        }
+
+        h4 {
+          max-width: 210px;
+          width: 100%;
+          color: #020105;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 20px; /* 142.857% */
+        }
+      }
     }
+  }
 }
