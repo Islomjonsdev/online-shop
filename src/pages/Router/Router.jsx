@@ -11,12 +11,12 @@ const Router = () => {
   return (
     <div>
       <Routes>
-        <Route path="/login" element={<Login />}/>
+        <Route path="/login" element={<Login />} />
         <Route path="/" element={<Layout />}>
           <Route path="/" element={<Home />} />
-          <Route path="/cart" element={<Cart />}/>
-          <Route path="/like" element={<Like />}/>
-          <Route path="/compare" element={<Compare />}/>
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/like" element={<Like />} />
+          <Route path="/compare" element={<Compare />} />
         </Route>
       </Routes>
     </div>

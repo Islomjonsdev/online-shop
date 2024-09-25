@@ -2,10 +2,11 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { productsData } from "../../Api/ProductsApi";
 import ProductCard from "../ProductCard/ProductCard";
-import style from "./Products.module.scss";
+import style from "./DiscountProducts.module.scss";
 
-const Products = () => {
+const DiscountProducts = () => {
   const { t } = useTranslation();
+
   return (
     <section className={style.products}>
       <div className={style.container}>
@@ -15,15 +16,11 @@ const Products = () => {
         </div>
 
         <div className={style.products_list}>
-          {productsData
-            ?.filter((el) => !el.discount)
-            ?.map((el) => (
-              <ProductCard data={el} key={el?.id} />
-            ))}
+          {productsData?.filter(el=> el.discount).map((el) => <ProductCard data={el} key={el?.id} />)}
         </div>
       </div>
     </section>
   );
 };
 
-export default Products;
+export default DiscountProducts;

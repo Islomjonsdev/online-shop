@@ -1,0 +1,161 @@
+@import "../../scss/variable.scss";
+
+.wrapper {
+  max-width: 252px;
+  width: 100%;
+  position: relative;
+  &:hover {
+    .products_btn {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      display: flex;
+      flex-direction: column;
+
+      button {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 14px;
+        cursor: pointer;
+      }
+
+      .exchange {
+        display: block;
+      }
+    }
+  }
+
+  .card_image {
+    margin-bottom: 8px;
+    position: relative;
+  }
+
+  .discount {
+    background-image: url(../../assets/images/melon.png);
+    background-repeat: no-repeat;
+    width: 77px;
+    height: 64px;
+    position: absolute;
+    left: 12px;
+    top: 260px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 5px;
+
+    p {
+      color: $white;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 10px; /* 100% */
+    }
+
+    span {
+      color: #f9f9f9;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px; /* 150% */
+    }
+  }
+
+  .products_btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    flex-direction: column;
+
+    button {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: none;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 14px;
+      cursor: pointer;
+    }
+
+    .exchange {
+      display: none;
+    }
+  }
+
+  .products_list_item {
+    background: #f9f9f9;
+    padding: 12px 16px;
+    border-radius: 16px;
+
+    .products_list_top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 7.5px;
+
+      .products_list_top_item {
+        span {
+          display: block;
+          color: #020105;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px; /* 150% */
+        }
+
+        del {
+          color: #9a999b;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 20px; /* 142.857% */
+        }
+      }
+
+      button {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background: $orange;
+      }
+    }
+
+    .products_star_wrapper {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      margin-bottom: 7.5px;
+      p {
+        color: #020105;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 12px; /* 92.308% */
+      }
+    }
+
+    h4 {
+      max-width: 210px;
+      width: 100%;
+      color: #020105;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px; /* 142.857% */
+    }
+  }
+}
