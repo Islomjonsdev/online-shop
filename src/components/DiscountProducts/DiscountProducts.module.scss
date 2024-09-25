@@ -1,7 +1,7 @@
 @import "../../scss/variable.scss";
 
-.products {
-    margin-bottom: 135px;
+.discount_products {
+    margin-bottom: 152px;
   .container {
     max-width: 1672px;
     width: 100%;
@@ -11,7 +11,7 @@
     padding-right: 20px;
   }
 
-  .profucts_top {
+  .discount_products_top {
     display: flex;
     align-items: center;
     gap: 24px;
@@ -35,7 +35,7 @@
     }
   }
 
-  .products_list {
+  .discount_products_list {
     display: flex;
     align-items: center;
     justify-content: space-between;
