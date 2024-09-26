@@ -590,12 +590,12 @@ export const Icons = {
 
   hearIcons: (props) => (
     <svg
-    width="14"
-    height="12"
-    viewBox="0 0 14 12"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    {...props}
+      width="14"
+      height="12"
+      viewBox="0 0 14 12"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
     >
       <path
         fillRule="evenodd"
@@ -608,6 +608,22 @@ export const Icons = {
         stroke="white"
         strokeLinecap="round"
         strokeLinejoin="round"
+      />
+    </svg>
+  ),
+
+  nextIcon: (props) => (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M7.99976 6.34317L9.41397 4.92896L16.485 12L9.41397 19.0711L7.99976 17.6569L13.6566 12L7.99976 6.34317Z"
+        fill="#333333"
       />
     </svg>
   ),

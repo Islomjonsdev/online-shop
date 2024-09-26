@@ -3,25 +3,16 @@ import { Icons } from "../../SvgIcons";
 import style from "./ProductCard.module.scss";
 
 const ProductCard = ({ data }) => {
-  const {
-    id,
-    image,
-    price,
-    notPrice,
-    star,
-    starText,
-    cardTitle,
-    discount,
-  } = data;
+  const { id, image, price, notPrice, star, starText, cardTitle, discount } =
+    data;
   const [likedCards, setLikedCards] = useState(() => {
-      const storedLikes = localStorage.getItem("likedCards")
-      return storedLikes ? JSON.parse(storedLikes) : []
+    const storedLikes = localStorage.getItem("likedCards");
+    return storedLikes ? JSON.parse(storedLikes) : [];
   });
-  console.log(likedCards);
 
   useEffect(() => {
-      localStorage.setItem("likedCards", JSON.stringify(likedCards))
-  }, [likedCards])
+    localStorage.setItem("likedCards", JSON.stringify(likedCards));
+  }, [likedCards]);
 
   const handleLikedCards = (_id) => {
     let cache = likedCards.find((el) => el === _id);
@@ -31,7 +22,6 @@ const ProductCard = ({ data }) => {
       setLikedCards([...likedCards, _id]);
     }
   };
-
 
   return (
     <div className={style.wrapper} key={id}>

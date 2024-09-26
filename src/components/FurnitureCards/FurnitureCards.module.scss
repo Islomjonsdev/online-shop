@@ -1,0 +1,30 @@
+.furniture_cards {
+    max-width: 390px;
+    width: 100%;
+    border-radius: 24px;
+    border: 1px solid #F2F2FA;
+    background: #C8D1EC;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 50px 16px 16px 27px;
+    &:nth-child(2) {
+        background: #F3D0C0;
+    }
+
+    &:nth-child(3) {
+        background: #BED9E3;
+    }
+
+    &:nth-child(4) {
+        background: #F6F1D8;
+    }
+    .furniture_cards_left {
+        
+    }
+
+    img {
+        width: 204px;
+        height: 167px;
+    }
+}
