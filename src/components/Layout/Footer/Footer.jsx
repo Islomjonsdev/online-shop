@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import scannerImg from "../../../assets/svg/scan.svg";
 import style from "./Footer.module.scss";
+import FooterBottom from "./FooterBottom/FooterBottom";
 
 const Footer = () => {
   return (
@@ -82,6 +83,7 @@ const Footer = () => {
               </ul>
             </li>
           </ul>
+          <FooterBottom />
         </div>
       </div>
     </footer>

@@ -1,0 +1,95 @@
+@import "../../../../scss/variable.scss";
+
+.footer_bottom {
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .footer_bottom_left {
+    div {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 32px;
+      a {
+        background: #f9f9f9;
+        width: 60px;
+        height: 60px;
+        padding: 10px;
+        border-radius: 50%;
+
+        .instagram {
+          &:hover {
+            path {
+              stroke: $darkYellow;
+            }
+          }
+        }
+
+        .telegram {
+          &:hover {
+            path {
+              fill: $darkYellow;
+            }
+          }
+        }
+
+        .facebook {
+          &:hover {
+            path {
+              fill: $darkYellow;
+            }
+          }
+        }
+      }
+    }
+
+    p {
+      color: $grey;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px; /* 155.556% */
+    }
+  }
+
+  .footer_bottom_right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    a {
+      background: #f9f9f9;
+      width: 60px;
+      height: 60px;
+      padding: 10px;
+      border-radius: 50%;
+
+      .apple {
+        &:hover {
+          path {
+            fill: $darkYellow;
+          }
+        }
+      }
+
+      .android {
+        &:hover {
+          path {
+            fill: $darkYellow;
+          }
+        }
+      }
+    }
+
+    p {
+      color: #020105;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 133.333% */
+      margin-right: 16px;
+    }
+  }
+}
