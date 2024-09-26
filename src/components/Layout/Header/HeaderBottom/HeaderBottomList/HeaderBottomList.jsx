@@ -1,11 +1,16 @@
 import React from "react";
+import { useEffect } from "react";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { Icons } from "../../../../../SvgIcons";
 import style from "./HeaderBottomList.module.scss";
 
 const HeaderBottomList = () => {
-  const { t } = useTranslation()
+  const [likes, setlikes] = useState(
+    JSON.parse(localStorage.getItem("likedCards") || "[]")
+  );
+  const { t } = useTranslation();
   return (
     <div className={style.header_bottom_list}>
       <Link to={"/compare"}>
@@ -13,6 +18,7 @@ const HeaderBottomList = () => {
       </Link>
       <Link to={"/like"}>
         <Icons.heart /> {t("like")}
+        <span>{likes?.length}</span>
       </Link>
       <Link to={"/cart"}>
         <Icons.cart /> {t("cart")}
