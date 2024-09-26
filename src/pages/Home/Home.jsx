@@ -1,4 +1,5 @@
 import React from 'react'
+import Brands from '../../components/Brands/Brands'
 import Category from '../../components/Category/Category'
 import DiscountProducts from '../../components/DiscountProducts/DiscountProducts'
 import Furniture from '../../components/Furniture/Furniture'
@@ -13,6 +14,7 @@ const Home = () => {
         <Products />
         <DiscountProducts />
         <Furniture />
+        <Brands />
     </main>
   )
 }

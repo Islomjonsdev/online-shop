@@ -1,0 +1,30 @@
+.brands {
+    margin-bottom: 154px;
+    .container {
+        max-width: 1672px;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    h3 {
+        color: #121212;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    
+    .brands_container {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        
+        li {
+            padding: 42px 76px 41px 51px;
+        }
+    }
+}
