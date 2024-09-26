@@ -7,14 +7,14 @@ const FurnitureCards = ({ cards }) => {
   console.log(cards);
   return (
     <div className={style.furniture_cards}>
-      <div className={style.furniture_cards_left}>
-        <h4>{furnitureTitle}</h4>
-        <p>{furnitureText}</p>
+      <h4>{furnitureTitle}</h4>
+      <p>{furnitureText}</p>
+      <div className={style.furniture_cards_bottom}>
         <button>
           <Icons.nextIcon />
         </button>
+        <img src={furnitureImage} alt="" />
       </div>
-      <img src={furnitureImage} alt="" />
     </div>
   );
 };
