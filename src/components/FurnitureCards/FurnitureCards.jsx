@@ -4,7 +4,6 @@ import style from "./FurnitureCards.module.scss";
 
 const FurnitureCards = ({ cards }) => {
   const { id, furnitureTitle, furnitureText, furnitureImage } = cards;
-  console.log(cards);
   return (
     <div className={style.furniture_cards}>
       <h4>{furnitureTitle}</h4>
