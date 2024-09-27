@@ -38,7 +38,7 @@ const Header = () => {
                 <Icons.telegram />
                 home24.uz
               </Link>
-              <Link to={"tel:+998 71 200 7 002"}>+998 71 200 7 002</Link>
+              <Link className={style.header_num} to={"tel:+998 71 200 7 002"}>+998 71 200 7 002</Link>
               <div className={style.header_lang}>
                 <div
                   className={style.header_lang_wrapper}
