@@ -1,58 +1,57 @@
 @import "../../scss/variable.scss";
 
 .furniture_cards {
-    max-width: 390px;
-    width: 100%;
-    border-radius: 24px;
-    border: 1px solid #F2F2FA;
-    background: #C8D1EC;
-    padding: 50px 16px 16px 27px;
-    &:nth-child(2) {
-        background: #F3D0C0;
+  max-width: 390px;
+  width: 100%;
+  border-radius: 24px;
+  border: 1px solid #f2f2fa;
+  background: #c8d1ec;
+  padding: 50px 16px 16px 27px;
+  &:nth-child(2) {
+    background: #f3d0c0;
+  }
+
+  &:nth-child(3) {
+    background: #bed9e3;
+  }
+
+  &:nth-child(4) {
+    background: #f6f1d8;
+  }
+  .furniture_cards_left {
+      
+  }
+  h4 {
+    color: #020105;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; /* 125% */
+  }
+
+  p {
+    color: #020105;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.6;
+  }
+  .furniture_cards_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    button {
+      border: none;
+      cursor: pointer;
+      width: 54px;
+      height: 54px;
+      background: $white;
+      border-radius: 50%;
     }
-    
-    &:nth-child(3) {
-        background: #BED9E3;
+    img {
+      width: 204px;
+      height: 167px;
     }
-    
-    &:nth-child(4) {
-        background: #F6F1D8;
-    }
-    .furniture_cards_left {
-        
-    }
-    h4 {
-        color: #020105;
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 40px; /* 125% */
-    }
-    
-    p {
-        color: #020105;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        opacity: 0.6;
-    }
-    .furniture_cards_bottom {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        button {
-            border: none;
-            cursor: pointer;
-            width: 54px;
-            height: 54px;
-            background: $white;
-            border-radius: 50%;
-        }
-        img {
-            width: 204px;
-            height: 167px;
-        }
-    }
-    
+  }
 }

@@ -721,7 +721,7 @@ export const Icons = {
     xmlns="http://www.w3.org/2000/svg"
     {...props}
     >
-      <g clip-path="url(#clip0_5168_11261)">
+      <g clipPath="url(#clip0_5168_11261)">
         <path
           fillRule="evenodd"
           clipRule="evenodd"
