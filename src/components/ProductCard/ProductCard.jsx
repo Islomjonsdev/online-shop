@@ -1,14 +1,24 @@
 import React, { useEffect, useState } from "react";
 import { Icons } from "../../SvgIcons";
+import { useDispatch } from "react-redux";
 import style from "./ProductCard.module.scss";
 
 const ProductCard = ({ data }) => {
+    const dispatch = useDispatch()
   const { id, image, price, notPrice, star, starText, cardTitle, discount } =
     data;
   const [likedCards, setLikedCards] = useState(() => {
     const storedLikes = localStorage.getItem("likedCards");
     return storedLikes ? JSON.parse(storedLikes) : [];
   });
+
+  const dispatchProducts = (data) => {
+      const action = {
+          type: "add_to_cart",
+          data: data
+      }
+      dispatch(action)
+  }
 
   useEffect(() => {
     localStorage.setItem("likedCards", JSON.stringify(likedCards));
@@ -48,7 +58,7 @@ const ProductCard = ({ data }) => {
             <span>{price}</span>
             <del>{notPrice}</del>
           </div>
-          <button>
+          <button onClick={() => dispatchProducts({ id, image, price, notPrice, star, starText, cardTitle, discount  })}>
             <Icons.cartIcon />
           </button>
         </div>
