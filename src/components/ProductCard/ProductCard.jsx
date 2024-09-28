@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import style from "./ProductCard.module.scss";
 
 const ProductCard = ({ data }) => {
-    const dispatch = useDispatch()
+  const dispatch = useDispatch();
   const { id, image, price, notPrice, star, starText, cardTitle, discount } =
     data;
   const [likedCards, setLikedCards] = useState(() => {
@@ -13,24 +13,30 @@ const ProductCard = ({ data }) => {
   });
 
   const dispatchProducts = (data) => {
-      const action = {
-          type: "add_to_cart",
-          data: data
-      }
-      dispatch(action)
-  }
+    const action = {
+      type: "add_to_cart",
+      data: data,
+    };
+    dispatch(action);
+  };
 
   useEffect(() => {
     localStorage.setItem("likedCards", JSON.stringify(likedCards));
   }, [likedCards]);
 
-  const handleLikedCards = (_id) => {
+  const handleLikedCards = (_id, data) => {
     let cache = likedCards.find((el) => el === _id);
     if (cache) {
       setLikedCards(likedCards.filter((el) => el !== _id));
     } else {
       setLikedCards([...likedCards, _id]);
     }
+
+    const action = {
+      type: "add_to_like",
+      data: data,
+    };
+    dispatch(action);
   };
 
   return (
@@ -45,7 +51,7 @@ const ProductCard = ({ data }) => {
         <></>
       )}
       <div className={style.products_btn}>
-        <button onClick={() => handleLikedCards(id)}>
+        <button onClick={() => handleLikedCards(id, data)}>
           {!likedCards?.includes(id) ? <Icons.likeIcon /> : <Icons.hearIcons />}
         </button>
         <button className={style.exchange}>
@@ -58,7 +64,20 @@ const ProductCard = ({ data }) => {
             <span>{price}</span>
             <del>{notPrice}</del>
           </div>
-          <button onClick={() => dispatchProducts({ id, image, price, notPrice, star, starText, cardTitle, discount  })}>
+          <button
+            onClick={() =>
+              dispatchProducts({
+                id,
+                image,
+                price,
+                notPrice,
+                star,
+                starText,
+                cardTitle,
+                discount,
+              })
+            }
+          >
             <Icons.cartIcon />
           </button>
         </div>

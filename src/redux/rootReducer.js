@@ -2,8 +2,12 @@ const initialCart = {
   cart: [],
 };
 
+const initialCartLike = {
+  likeCart: [],
+};
+
 const cartReducer = (state = initialCart, action) => {
-    console.log(action);
+  console.log(action);
   switch (action.type) {
     case "add_to_cart":
       return {
@@ -14,4 +18,16 @@ const cartReducer = (state = initialCart, action) => {
   }
 };
 
-export { cartReducer };
+const likeReducer = (state = initialCartLike, action) => {
+  console.log(action, "like action");
+  switch (action.type) {
+    case "add_to_like":
+      return {
+        likeCart: [...state.likeCart, action.data],
+      };
+    default:
+      return state;
+  }
+};
+
+export { cartReducer, likeReducer };

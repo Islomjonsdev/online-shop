@@ -1,7 +1,8 @@
 import { combineReducers } from "redux";
-import { cartReducer } from "./rootReducer";
+import { cartReducer, likeReducer } from "./rootReducer";
 const joinedReducer = combineReducers({
-    joinedCart: cartReducer
+    joinedCart: cartReducer,
+    likeCart: likeReducer
 });
 
 export default joinedReducer
