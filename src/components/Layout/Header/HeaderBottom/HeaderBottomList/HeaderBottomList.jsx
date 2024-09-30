@@ -9,6 +9,10 @@ const HeaderBottomList = () => {
   const [likes, setlikes] = useState(
     JSON.parse(localStorage.getItem("likedCards") || "[]")
   );
+
+  const [ carts, setCarts ] = useState(
+    JSON.parse(localStorage.getItem("cart") || "[]")
+  )
   const { t } = useTranslation();
   return (
     <div className={style.header_bottom_list}>
@@ -21,6 +25,7 @@ const HeaderBottomList = () => {
       </Link>
       <Link to={"/cart"}>
         <Icons.cart /> {t("cart")}
+        <span>{carts?.length}</span>
       </Link>
       <Link to={"/login"}>
         <Icons.profile /> {t("login")}
