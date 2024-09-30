@@ -5,7 +5,11 @@ const Like = () => {
   const likeProduct = useSelector((state) => state);
   console.log(likeProduct);
   return (
-    <div>Like</div>
+    <div>
+      {likeProduct?.likeCart?.likeCart?.map((likes) => (
+        <img src={likes?.image} alt="" />
+      ))}
+    </div>
   )
 }
 
