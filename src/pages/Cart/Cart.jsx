@@ -18,7 +18,7 @@ const Cart = () => {
   useEffect(() => {
     if (accept?.joinedCart?.cart && accept.joinedCart.cart.length > 0) {
       setCartItems(accept.joinedCart.cart);
-      localStorage.setItem("cart", JSON.stringify(accept.joinedCart.cart)); 
+      localStorage.setItem("cart", JSON.stringify(accept.joinedCart.cart));
     }
   }, [accept]);
 

@@ -1,0 +1,49 @@
+@import "../../scss/variable.scss";
+
+.like {
+    .container {
+        max-width: 1672px;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .like_top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 64px;
+            height: 64px;
+            object-fit: contain;
+            margin-bottom: 20px;    
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            h1 {
+              font-size: 42px;
+              font-weight: 600;
+              line-height: 49px;
+              margin-bottom: 16px;
+            }
+      
+            a {
+              border: 1px solid $orange;
+             padding: 20px;
+              border-radius: 10px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 16px;
+              color: $black;
+            }
+        }
+    }
+}
