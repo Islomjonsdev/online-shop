@@ -5,6 +5,7 @@ import { FcLike } from "react-icons/fc";
 import { Icons } from "../../SvgIcons";
 import chairImg from "../../assets/images/chair.png";
 import style from "./Hero.module.scss";
+import table from "../../assets/images/table.png";
 import { useTranslation } from "react-i18next";
 
 const Hero = () => {
@@ -22,9 +23,14 @@ const Hero = () => {
               <FaArrowLeft />
             </button>
             <div className={style.hero_left}>
-              <h3>{t("bestBad")}</h3>
-              <p>{t("metal")}</p>
-              <span>{t("promet")}</span>
+              <div className={style.hero_left_wrapper}>
+                <h3>{t("bestBad")}</h3>
+                <p>{t("metal")}</p>
+                <span>{t("promet")}</span>
+              </div>
+              <div className={style.hero_right_wrapper}>
+                <img src={table} alt="" />
+              </div>
             </div>
             <button className={style.hero_btn} data-btn-type="right">
               <FaArrowRight />

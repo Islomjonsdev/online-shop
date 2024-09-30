@@ -24,36 +24,47 @@
       width: 100%;
       border-radius: 24px;
       background: #ff7e00;
-      padding: 80px 0px 80px 96px;
+      padding: 80px 96px 80px 96px;
 
       .hero_left {
-        max-width: 468px;
-        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .hero_left_wrapper {
+          max-width: 468px;
+          width: 100%;
 
-        h3 {
-          color: $white;
-          font-size: 64px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: 72px;
-          margin-bottom: 40px;
+          h3 {
+            color: $white;
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 72px;
+            margin-bottom: 40px;
+          }
+  
+          p {
+            color: $white;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px;
+            margin-bottom: 8px;
+          }
+  
+          span {
+            color: $white;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 48px;
+          }
         }
-
-        p {
-          color: $white;
-          font-size: 24px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 32px;
-          margin-bottom: 8px;
-        }
-
-        span {
-          color: $white;
-          font-size: 40px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: 48px;
+        .hero_right_wrapper {
+          img {
+            width: 376px;
+            height: 390px;
+          }
         }
       }
     }
