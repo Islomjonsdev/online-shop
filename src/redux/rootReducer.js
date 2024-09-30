@@ -6,8 +6,9 @@ const initialCartLike = {
   likeCart: [],
 };
 
+
 const cartReducer = (state = initialCart, action) => {
-  console.log(action);
+    console.log(action);
   switch (action.type) {
     case "add_to_cart":
       return {
