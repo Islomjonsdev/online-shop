@@ -38,14 +38,17 @@ const Like = () => {
             <>
               <div>
                 <img src={likeImage} alt="" />
-                  <h1>Sizga yoqqanini qoʻshing</h1>
-                  <Link to={"/"}>Akkauntga kirish</Link>
+                <h1>Sizga yoqqanini qoʻshing</h1>
+                <Link to={"/"}>Akkauntga kirish</Link>
               </div>
             </>
           )}
         </div>
         {likes.map((likes) => (
-          <img src={likes?.image} alt="" />
+          <div>
+            <img src={likes?.image} alt="" />
+            <p>{likes?.price}</p>
+          </div>
         ))}
       </div>
     </div>
