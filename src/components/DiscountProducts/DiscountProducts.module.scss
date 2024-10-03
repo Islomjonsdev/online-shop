@@ -1,7 +1,7 @@
 @import "../../scss/variable.scss";
 
 .discount_products {
-    margin-bottom: 152px;
+  margin-bottom: 152px;
   .container {
     max-width: 1672px;
     width: 100%;
@@ -39,6 +39,65 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+}
 
+@media only screen and (max-width: 1530px) {
+  .discount_products {
+    margin-bottom: 100px;
+
+    .discount_products_top {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 20px;
+
+      h3 {
+        font-size: 28px;
+        line-height: 40px; /* 150% */
+      }
+
+      span {
+        font-size: 18px;
+        line-height: 28px; /* 140% */
+      }
+    }
+
+    .discount_products_list {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .discount_products {
+    margin-bottom: 100px;
+
+    .discount_products_top {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      margin-bottom: 10px;
+
+      h3 {
+        font-size: 20px;
+        line-height: 26px; /* 150% */
+      }
+
+      span {
+        font-size: 13px;
+        line-height: 20px;
+      }
+    }
+
+    .discount_products_list {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
   }
 }
