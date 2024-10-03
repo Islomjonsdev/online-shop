@@ -1,7 +1,7 @@
 @import "../../scss/variable.scss";
 
 .discount_products {
-  margin-bottom: 152px;
+    margin-bottom: 152px;
   .container {
     max-width: 1672px;
     width: 100%;
@@ -39,6 +39,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
   }
 }
 
@@ -66,15 +67,16 @@
     .discount_products_list {
       display: flex;
       align-items: center;
-      flex-wrap: wrap;
       justify-content: space-between;
+      flex-wrap: wrap;
     }
   }
 }
 
+
 @media only screen and (max-width: 390px) {
   .discount_products {
-    margin-bottom: 100px;
+    margin-bottom: 30px;
 
     .discount_products_top {
       display: flex;
