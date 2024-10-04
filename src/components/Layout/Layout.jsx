@@ -6,7 +6,7 @@ import Header from "./Header/Header";
 const Layout = () => {
   return (
     <Fragment>
-      {/* <Header /> */}
+      <Header />
       <Outlet />
       <Footer />
     </Fragment>
