@@ -15,8 +15,8 @@
   }
 
   .hero_container {
-    justify-content: space-between;
     display: flex;
+    justify-content: space-between;
 
     .hero_blog {
       position: relative;
@@ -42,7 +42,7 @@
             line-height: 72px;
             margin-bottom: 40px;
           }
-  
+
           p {
             color: $white;
             font-size: 24px;
@@ -51,7 +51,7 @@
             line-height: 32px;
             margin-bottom: 8px;
           }
-  
+
           span {
             color: $white;
             font-size: 40px;
@@ -113,9 +113,9 @@
         justify-content: space-between;
 
         .hero_right_bottom_list {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
           div {
             max-width: 144px;
             width: 100%;
@@ -167,7 +167,7 @@
             font-size: 14px;
             font-style: normal;
             font-weight: 400;
-            line-height: 18px; 
+            line-height: 18px;
             text-align: center;
           }
         }
@@ -200,6 +200,449 @@
 
     .hero_btn[data-btn-type="right"] {
       right: 16px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1170px) {
+  .hero {
+    background: #f5f5f5;
+    padding: 40px 0px 90px 0px;
+    margin-bottom: 57px;
+
+    .hero_container {
+      display: flex;
+      justify-content: space-between;
+
+      .hero_blog {
+        position: relative;
+        padding: 60px 96px 60px 76px;
+
+        .hero_left {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .hero_left_wrapper {
+            max-width: 468px;
+            width: 100%;
+
+            h3 {
+              font-size: 44px;
+              line-height: 48px;
+              margin-bottom: 20px;
+            }
+
+            p {
+              font-size: 20px;
+              line-height: 22px;
+              margin-bottom: 8px;
+            }
+
+            span {
+              font-size: 30px;
+              line-height: 38px;
+            }
+          }
+          .hero_right_wrapper {
+            img {
+              width: 276px;
+              height: 290px;
+            }
+          }
+        }
+      }
+
+      .hero_right {
+        max-width: 390px;
+        width: 100%;
+        padding: 20px 22px 71px 22px;
+
+        .hero_right_top {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 34px;
+          h3 {
+            font-size: 20px;
+          }
+        }
+
+        .hero_right_bottom {
+          display: flex;
+          justify-content: space-between;
+
+          .hero_right_bottom_list {
+            div {
+              margin-bottom: 65px;
+            }
+
+            .text2 {
+              font-size: 13px;
+              margin-bottom: 10px;
+            }
+
+            span {
+              font-size: 13px;
+              line-height: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .hero {
+    background: #f5f5f5;
+    padding: 20px 0px 60px 0px;
+    margin-bottom: 27px;
+
+    .hero_container {
+      display: flex;
+      justify-content: space-between;
+
+      .hero_blog {
+        position: relative;
+        padding: 30px 66px 30px 46px;
+
+        .hero_left {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .hero_left_wrapper {
+            max-width: 468px;
+            width: 100%;
+
+            h3 {
+              font-size: 34px;
+              line-height: 38px;
+              margin-bottom: 15px;
+            }
+
+            p {
+              font-size: 18px;
+              line-height: 18px;
+            }
+
+            span {
+              font-size: 25px;
+              line-height: 28px;
+            }
+          }
+          .hero_right_wrapper {
+            img {
+              width: 200px;
+              height: 320px;
+              object-fit: contain;
+            }
+          }
+        }
+      }
+
+      .hero_right {
+        max-width: 390px;
+        width: 100%;
+        padding: 20px 22px 71px 22px;
+
+        .hero_right_top {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 34px;
+          h3 {
+            font-size: 20px;
+          }
+        }
+
+        .hero_right_bottom {
+          display: flex;
+          justify-content: space-between;
+
+          .hero_right_bottom_list {
+            div {
+              margin-bottom: 65px;
+            }
+
+            .text2 {
+              font-size: 13px;
+              margin-bottom: 10px;
+            }
+
+            span {
+              font-size: 13px;
+              line-height: 15px;
+            }
+          }
+        }
+      }
+
+      .hero_btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        fill: var(--Main-colours-white, #fff);
+        opacity: 0.48;
+        svg {
+          width: 24px;
+          height: 24px;
+        }
+      }
+
+      .hero_btn[data-btn-type="left"] {
+        left: 0px;
+      }
+
+      .hero_btn[data-btn-type="right"] {
+        right: 0px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  .hero {
+    background: #f5f5f5;
+    padding: 45px 0px 95px 0px;
+    margin-bottom: 57px;
+
+    .hero_container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .hero_blog {
+        position: relative;
+        max-width: 790px;
+        width: 100%;
+        padding: 40px 56px 40px 56px;
+        margin-bottom: 10px;
+
+        .hero_left {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .hero_left_wrapper {
+            max-width: 468px;
+            width: 100%;
+
+            h3 {
+              font-size: 34px;
+              line-height: 32px;
+              margin-bottom: 15px;
+            }
+
+            p {
+              font-size: 20px;
+              line-height: 22px;
+              margin-bottom: 8px;
+            }
+
+            span {
+              font-size: 25px;
+              line-height: 28px;
+            }
+          }
+          .hero_right_wrapper {
+            img {
+              width: 276px;
+              height: 290px;
+            }
+          }
+        }
+      }
+
+      .hero_right {
+        max-width: 790px;
+        width: 100%;
+        padding: 20px 22px 61px 22px;
+
+        .hero_right_top {
+          margin-bottom: 24px;
+          h3 {
+            font-size: 20px;
+          }
+        }
+
+        .hero_right_bottom {
+          display: flex;
+          justify-content: space-between;
+
+          .hero_right_bottom_list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            div {
+              margin-bottom: 55px;
+              .text1 {
+                font-size: 14px;
+              }
+            }
+
+            .text2 {
+              font-size: 13px;
+              margin-bottom: 10px;
+            }
+
+            span {
+              font-size: 13px;
+              line-height: 15px;
+            }
+          }
+        }
+      }
+
+      .hero_btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 38px;
+        height: 38px;
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      .hero_btn[data-btn-type="left"] {
+        left: 10px;
+      }
+
+      .hero_btn[data-btn-type="right"] {
+        right: 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .hero {
+    background: #f5f5f5;
+    padding: 45px 0px 95px 0px;
+    margin-bottom: 57px;
+
+    .hero_container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .hero_blog {
+        position: relative;
+        max-width: 790px;
+        width: 100%;
+        padding: 40px 56px 40px 56px;
+        margin-bottom: 10px;
+
+        .hero_left {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: space-between;
+          .hero_left_wrapper {
+            max-width: 500px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+
+            h3 {
+              font-size: 24px;
+              line-height: 22px;
+              margin-bottom: 10px;
+            }
+
+            p {
+              font-size: 15px;
+              line-height: 15px;
+              margin-bottom: 8px;
+            }
+
+            span {
+              font-size: 20px;
+              line-height: 20px;
+            }
+          }
+          .hero_right_wrapper {
+            img {
+              width: 230px;
+              height: 250px;
+              object-fit: contain;
+            }
+          }
+        }
+      }
+
+      .hero_right {
+        max-width: 790px;
+        width: 100%;
+        padding: 20px 22px 51px 22px;
+
+        .hero_right_top {
+          margin-bottom: 20px;
+          h3 {
+            font-size: 15px;
+          }
+        }
+
+        .hero_right_bottom {
+          display: flex;
+          justify-content: space-between;
+
+          .hero_right_bottom_list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            div {
+              max-width: 144px;
+              width: 100%;
+              .text1 {
+                font-size: 13px;
+                padding: 5px;
+              }
+            }
+
+            .text2 {
+              font-size: 13px;
+              margin-bottom: 10px;
+            }
+
+            span {
+              font-size: 13px;
+              line-height: 15px;
+            }
+          }
+        }
+      }
+
+      .hero_btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 38px;
+        height: 38px;
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      .hero_btn[data-btn-type="left"] {
+        left: 10px;
+      }
+
+      .hero_btn[data-btn-type="right"] {
+        right: 10px;
+      }
     }
   }
 }
