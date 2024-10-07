@@ -11,7 +11,6 @@ import img9 from "../../assets/images/image9.png";
 import img10 from "../../assets/images/image10.png";
 import img11 from "../../assets/images/image11.png";
 
-
 import style from "./Category.module.scss";
 import { Link } from "react-router-dom";
 
@@ -72,17 +71,17 @@ const Category = () => {
       title: "Электроника",
     },
     {
-        id: 10,
-        image: img10,
-        number: "1248 dona",
-        title: "Сварочные аппараты",
-      },
-      {
-        id: 11,
-        image: img11,
-        number: "1248 dona",
-        title: "Электроника",
-      },
+      id: 10,
+      image: img10,
+      number: "1248 dona",
+      title: "Сварочные аппараты",
+    },
+    {
+      id: 11,
+      image: img11,
+      number: "1248 dona",
+      title: "Электроника",
+    },
   ];
   return (
     <section className={style.category}>

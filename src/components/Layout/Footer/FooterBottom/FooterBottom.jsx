@@ -24,10 +24,10 @@ const FooterBottom = () => {
       <div className={style.footer_bottom_right}>
         <p>Мобильное приложение:</p>
         <Link to={"/"}>
-          <Icons.apple className={style.apple}/>
+          <Icons.apple className={style.apple} />
         </Link>
         <Link to={"/"}>
-          <Icons.android className={style.android}/>
+          <Icons.android className={style.android} />
         </Link>
       </div>
     </div>

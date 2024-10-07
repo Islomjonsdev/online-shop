@@ -8,16 +8,21 @@ import Like from "../Like/Like";
 import Login from "../Login/Login";
 
 const Router = () => {
+  const user = true;
+  if (!user) {
+    return <Login />;
+  }
   return (
     <div>
       <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route path="/" element={<Layout />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/like" element={<Like />} />
-          <Route path="/compare" element={<Compare />} />
-        </Route>
+        {user ? (
+          <Route path="/" element={<Layout />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/like" element={<Like />} />
+            <Route path="/compare" element={<Compare />} />
+          </Route>
+        ) : null}
       </Routes>
     </div>
   );
