@@ -15,6 +15,7 @@ import style from "./Category.module.scss";
 import { Link } from "react-router-dom";
 
 const Category = () => {
+  
   const categoryData = [
     {
       id: 1,
