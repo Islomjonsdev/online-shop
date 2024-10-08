@@ -44,8 +44,8 @@ const Like = () => {
             </>
           )}
         </div>
-        {likes.map((likes) => (
-          <div>
+        {likes.map((likes, id) => (
+          <div key={id}>
             <img src={likes?.image} alt="" />
             <p>{likes?.price}</p>
           </div>
