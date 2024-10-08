@@ -55,3 +55,99 @@
     }
   }
 }
+
+@media only screen and (max-width: 1350px) {
+  .furniture_cards {
+    max-width: 330px;
+    width: 100%;
+    border-radius: 24px;
+    border: 1px solid #f2f2fa;
+    background: #c8d1ec;
+    padding: 40px 14px 14px 23px;
+
+    .furniture_cards_left {
+        
+    }
+    h4 {
+      font-size: 28px;
+      line-height: 40px; /* 125% */
+    }
+  
+    p {
+      font-size: 14px;
+    }
+    .furniture_cards_bottom {
+      button {
+        width: 44px;
+        height: 44px;
+      }
+      img {
+        width: 184px;
+        height: 137px;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1115px) {
+  .furniture_cards {
+    max-width: 300px;
+    width: 100%;
+    padding: 30px 12px 12px 18px;
+
+    .furniture_cards_left {
+        
+    }
+    h4 {
+      font-size: 25px;
+      line-height: 33px; /* 125% */
+    }
+  
+    p {
+      font-size: 13px;
+    }
+    .furniture_cards_bottom {
+      button {
+        width: 40px;
+        height: 40px;
+      }
+      img {
+        width: 154px;
+        height: 127px;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .furniture_cards {
+    max-width: 230px;
+    width: 100%;
+    padding: 20px 10px 10px 14px;
+
+    .furniture_cards_left {
+        
+    }
+    h4 {
+      font-size: 18px;
+      line-height: 33px; /* 125% */
+    }
+  
+    p {
+      font-size: 12px;
+    }
+    .furniture_cards_bottom {
+      button {
+        width: 30px;
+        height: 30px;
+      }
+      img {
+        width: 124px;
+        height: 77px;
+        object-fit: contain;
+      }
+    }
+  }
+}
