@@ -6,7 +6,6 @@ import style from "./DiscountProducts.module.scss";
 
 const DiscountProducts = () => {
   const { t } = useTranslation();
-
   return (
     <section className={style.discount_products}>
       <div className={style.container}>
